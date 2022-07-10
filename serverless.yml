@@ -60,3 +60,11 @@ functions:
       - http: 
           path: hits
           method: post
+  getSiteStats:
+    handler: src/api/site-hits/getSiteStats.getSiteStats
+    memorySize: 128
+    description: Get site visit count
+    events:
+      - http: 
+          path: hits
+          method: get
