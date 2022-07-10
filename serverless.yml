@@ -44,3 +44,11 @@ functions:
       - http: 
           path: accounts
           method: post
+  increaseHits:
+    handler: src/api/site-hits/hitSite.hit
+    memorySize: 128
+    description: Update hits for site
+    events:
+      - http: 
+          path: hits
+          method: post
