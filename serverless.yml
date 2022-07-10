@@ -44,6 +44,14 @@ functions:
       - http: 
           path: accounts
           method: post
+  getAccountInfo:
+    handler: src/api/accounts/getAccount.getAccount
+    memorySize: 128
+    description: Get account info by email
+    events:
+      - http: 
+          path: login
+          method: post
   increaseHits:
     handler: src/api/site-hits/hitSite.hit
     memorySize: 128
