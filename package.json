@@ -1,9 +1,10 @@
 {
-  "name": "ton-challenge",
+  "name": "challenge",
   "version": "0.0.1",
   "description": "Interview Challenge Project ",
   "main": "index.js",
   "scripts": {
+    "deploy": "sls deploy",
     "test": "jest"
   },
   "author": "Gustavo Diniz",
