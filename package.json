@@ -1,0 +1,14 @@
+{
+  "name": "ton-challenge",
+  "version": "0.0.1",
+  "description": "Interview Challenge Project ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Gustavo Diniz",
+  "license": "MIT",
+  "dependencies": {
+    "serveless": "^0.0.2"
+  }
+}
