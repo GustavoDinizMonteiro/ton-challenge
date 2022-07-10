@@ -1,9 +1,9 @@
 'use strict';
 
-const { DynamoDB } = require('aws-sdk'); 
+const { DynamoDB } = require('aws-sdk');
 const dynamoDb = new DynamoDB.DocumentClient();
 
-const createAccount = async(event) => {
+const createAccount = async (event) => {
   const { email, name } = JSON.parse(event.body);
   await dynamoDb.put({
     TableName: 'create-account-dev',

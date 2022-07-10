@@ -5,11 +5,15 @@
   "main": "index.js",
   "scripts": {
     "deploy": "sls deploy",
-    "test": "jest"
+    "test": "jest --verbose ./src/tests"
   },
   "author": "Gustavo Diniz",
   "license": "MIT",
   "dependencies": {
     "serveless": "^0.0.2"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.1171.0",
+    "jest": "^28.1.2"
   }
 }

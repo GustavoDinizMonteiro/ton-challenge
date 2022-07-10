@@ -37,7 +37,7 @@ resources:
 
 functions:
   accountcreation:
-    handler: src/accounts/createAccount.createAccount
+    handler: src/api/accounts/createAccount.createAccount
     memorySize: 128
     description: Create a new account
     events:
