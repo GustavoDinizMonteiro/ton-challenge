@@ -6,6 +6,7 @@ provider:
   runtime: nodejs16.x
   environment:
     ACCOUNTS_TABLE: accounts-dev
+    CountApiKey: bd8bd189-e2d0-4326-b1cd-8628500c7a77
   iamRoleStatements:
     - Effect: Allow
       Action:
