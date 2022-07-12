@@ -14,7 +14,7 @@ const hit = async (_) => {
 const handleHit = async() => {
   const result = await countapi.hit(process.env.CountApiKey)
   return {
-    requestSuceess: result.status == 200,
+    requestSuceess: result.status === 200,
     hitCount: result.value
   }
 };
