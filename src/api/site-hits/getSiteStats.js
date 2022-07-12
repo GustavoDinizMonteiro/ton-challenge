@@ -13,16 +13,16 @@ const getSiteStats = async (_) => {
 
 const resSuccess = hitCount => ({
   statusCode: 200,
-  body: {
+  body:  JSON.stringify({
     hitCount
-  }
+  })
 })
 
 const resError = () => ({
   statusCode: 400,
-  body: {
+  body:  JSON.stringify({
     message: 'Unable to retrieve data'
-  }
+  })
 })
 
 module.exports = { getSiteStats }
